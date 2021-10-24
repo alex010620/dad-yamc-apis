@@ -1,0 +1,67 @@
+hr{
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: 0px 8px 53px 15px rgba(0,123,255,1);
+  -moz-box-shadow: 0px 8px 53px 15px rgba(0,123,255,1);
+  box-shadow: 0px 8px 53px 15px rgba(0,123,255,1);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 55px;
+  background-color: transparent;
+  z-index: 99999;
+}
+
+.Targetas{
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill,minmax(21rem,1fr));
+}
+
+.img{
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.image1{
+  background-image: url(../../../assets/hospital.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45% 70%;
+}
+
+.image2{
+  background-image: url(../../../assets/back-to-school.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45% 70%;
+}
+
+.image3{
+  background-image: url(../../../assets/simbolo-del-zodiaco-geminis-de-dos-caras-de-gemelos.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45% 70%;
+}
+.image4{
+  background-image: url(../../../assets/traductor.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40% 75%;
+}
+
+
+.details{
+  width: 100%;
+  height: 120px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  word-wrap: break-word;
+}
+h4,p{
+  text-align: center;
+}
+p{
+  text-justify: auto;
+}

@@ -1,0 +1,117 @@
+<div class="container-fluid mt-3">
+  <div class="container-lg ">
+      <h2 class="mb-4">Api de los hospitales de la República dominicana</h2>
+
+      <h3>Documentación</h3>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">GET</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="insert-tab" data-toggle="tab" href="#insert" role="tab" aria-controls="insert" aria-selected="false">INSERT</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="update-tab" data-toggle="tab" href="#" role="tab" aria-controls="update" aria-selected="false">UPDATE</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link" id="delete-tab" data-toggle="tab" href="#delete" role="tab" aria-controls="delete" aria-selected="false">DELETE</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+            <section>
+              <h4 class="mt-3">Obtener todos los Hospitales</h4>
+
+              <p>La siguiente URL permite obtener todos los hospitales registrados en la republica dominicana.</p>
+
+              <div class="alert alert-primary" role="alert">
+              <p>
+               <a class="w-100" style="text-decoration: none;" href="https://api-hospitalesrd.herokuapp.com/api/HospitalesRD/All_Hospitales" target="_blank">
+                   <b>https://api-hospitalesrd.herokuapp.com/api/HospitalesRD/All_Hospitales</b>
+                  </a>
+              </p>
+             </div>
+            </section>
+             <section>
+               <h4 class="mt-3">Obtener hospital por id</h4>
+
+              <p>La siguiente URL permite obtener un hospital por su id.</p>
+
+              <div class="alert alert-primary" role="alert">
+              <p>
+                  <b>https://api-hospitalesrd.herokuapp.com/api/HospitalesRD/All_Hospitales/[id]</b>
+              </p>
+             </div>
+             <h5>Ejemplo:</h5>
+             <div class="alert alert-primary" role="alert">
+              <p>
+               <a class="w-100" style="text-decoration: none;" href="https://api-hospitalesrd.herokuapp.com/api/HospitalesRD/All_Hospitales/1" target="_blank">
+                   <b>https://api-hospitalesrd.herokuapp.com/api/HospitalesRD/All_Hospitales/1</b>
+                  </a>
+              </p>
+             </div>
+             <h5>Resulatado</h5>
+             <div class="imagen1 mb-5">
+                 <img src="../../../assets/hospital_id.PNG" alt="">
+             </div>
+             </section>
+             <section>
+
+             </section>
+             <section>
+              <h4 class="mt-3">Obtener todos los Hospitales perteneciente a una provincia</h4>
+
+              <p>La siguiente URL permite obtener todos los hospitales registrados en la republica dominicana de una provincia en especifico.</p>
+
+              <div class="alert alert-primary" role="alert">
+              <p>
+                   <b>https://api-hospitalesrd.herokuapp.com/api/HospitalesRD/All_Hospitales/Provincia/[Nombre de la provincia]</b>
+              </p>
+             </div>
+             <h5>Ejemplo:</h5>
+             <div class="alert alert-primary" role="alert">
+              <p>
+               <a class="w-100" style="text-decoration: none;" href="https://api-hospitalesrd.herokuapp.com/api/HospitalesRD/All_Hospitales/Provincia/Monte plata" target="_blank">
+                   <b>https://api-hospitalesrd.herokuapp.com/api/HospitalesRD/All_Hospitales/Provincia/<span style="color: green;">Monte plata</span></b>
+                  </a>
+              </p>
+             </div>
+             </section>
+            <section>
+              <h4 class="mt-3">Obtener todos los Hospitales perteneciente a un municipio con relacion a una provincia</h4>
+              <p>La siguiente URL permite obtener todos los hospitales registrados en la republica dominicana de un municipio en especifico, con relacion a una provincia.</p>
+
+              <div class="alert alert-primary" role="alert">
+              <p>
+                   <b>https://api-hospitalesrd.herokuapp.com/api/HospitalesRD/All_Hospitales/Provincia/<span>[provincia]</span>/Municipio/<span>[municipio]</span></b>
+              </p>
+             </div>
+             <h5>Ejemplo:</h5>
+             <div class="alert alert-primary" role="alert">
+              <p>
+               <a class="w-100" style="text-decoration: none;" href="https://api-hospitalesrd.herokuapp.com/api/HospitalesRD/All_Hospitales/Provincia/Monte%20plata/Municipio/Bayaguana" target="_blank">
+                   <b>https://api-hospitalesrd.herokuapp.com/api/HospitalesRD/All_Hospitales/Provincia/<label>Monte plata</label>/Municipio/<label>Bayaguana</label></b>
+                  </a>
+              </p>
+             </div>
+              <h5>Nota</h5>
+              <p>En caso de a ver digitado el nombre de la provincia o el nombre del municipio incorrectamente el resultado sería el siguiente: </p>
+
+              <div class="imagen2 mb-5">
+                  <img src="../../../assets/errordenombre.PNG" alt="">
+              </div>
+            </section>
+          </div>
+          <div class="tab-pane fade" id="insert" role="tabpanel" aria-labelledby="insert-tab">
+              <h5>¡Esta sección estará habilitada muy pronto!</h5>
+          </div>
+          <div class="tab-pane fade" id="update" role="tabpanel" aria-labelledby="update-tab">
+              <h5>¡Esta sección estará habilitada muy pronto!</h5>
+          </div>
+          <div class="tab-pane fade" id="delete" role="tabpanel" aria-labelledby="delete-tab">
+              <h5>¡Esta sección estará habilitada muy pronto!</h5>
+          </div>
+        </div>
+  </div>
+</div>
